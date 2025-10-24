@@ -22,6 +22,6 @@ Sticking with the `r_gva` example that would be:
 ```
 4. Lastly, set the time that the notebook should run in the [`dataset-butler.yml`](.github/workflows/dataset-butler.yml) file. If you don't wanna think too hard about crontab time formatting here's a [helpful resource](https://crontab.guru/).
 ```
-# schedule: # Uncomment, preseving indentation
-#     - cron: '0 10 * * *' # Uncomment, preseving indentation
+  # schedule: # Uncomment to enable scheduled runs
+    # - cron: '0 10 * * *' # Uncomment to enable scheduled runs
 ```
