@@ -17,11 +17,11 @@ notebook_name = "[NOTEBOOK_NAME]"  # Replace with your notebook name
 4. Lastly, set the time that the notebook should run in the [`dataset-butler.yml`](.github/workflows/dataset-butler.yml) file. If you don't wanna think too hard about crontab time formatting here's a [helpful resource](https://crontab.guru/).
 ```
 # This schedules the workflow to run automatically
-schedule:
+
 # cron format is: MINUTE HOUR DAY-OF-MONTH MONTH DAY-OF-WEEK
 # This runs at 10:00 UTC, which is 6:00 AM ET (during Daylight Saving)
 # or 5:00 AM ET (during Standard Time). GitHub Actions uses UTC time.
 # For 6 AM ET year-round, you'd typically use 11:00 UTC.
-# 11:00 UTC = 6 AM EST (UTC-5) and 7 AM EDT (UTC-4). Let's stick with 10:00 UTC for 6 AM EDT.
-- cron: '0 10 * * *'
+# schedule: # Uncomment, preseving indentation
+#     - cron: '0 10 * * *' # Uncomment, preseving indentation
 ```
