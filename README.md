@@ -20,7 +20,7 @@ Sticking with the `r_gva` example that would be:
     workflow_name = "gva:kgtn"
     notebook_name = "gva_updater:x4bf"
 ```
-**Note the URL format for that notebook**: `https://redivis.com/workflows/kgtn-7vy84cvbr/notebooks/x4bf-9jy3tv2tp`. That's the easiest was to grab the 'qualified reference' information after the `:`, which you need for this to work correctly.
+**Note the URL format for that notebook**: `https://redivis.com/workflows/kgtn-7vy84cvbr/notebooks/x4bf-9jy3tv2tp`. That's the easiest way to grab the 'qualified reference' information after the `:`, which you need for this to work correctly.
 4. Lastly, set the time that the notebook should run in the [`dataset-butler.yml`](.github/workflows/dataset-butler.yml) file. If you don't wanna think too hard about crontab time formatting here's a [helpful resource](https://crontab.guru/).
 ```
   # schedule: # Uncomment to enable scheduled runs
