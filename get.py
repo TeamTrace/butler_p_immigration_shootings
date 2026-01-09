@@ -13,9 +13,9 @@ if not REDIVIS_API_TOKEN:
 def get():
     
     logger.info('Getting notebooks from Redivis...')
-    username = "[YOUR_USERNAME]"  # Replace with your Redivis username
-    workflow_name = "[WORKFLOW_NAME]"  # Replace with your workflow name
-    notebook_name = "[NOTEBOOK_NAME]"  # Replace with your notebook name
+    username = "glevines"  # Replace with your Redivis username
+    workflow_name = "p_va_gva:xjgf"  # Replace with your workflow name
+    notebook_name = "va_selector:26e3"  # Replace with your notebook name
     
     notebook = redivis.notebook(f"{username}.{workflow_name}.{notebook_name}")
     
