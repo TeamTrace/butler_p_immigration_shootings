@@ -14,8 +14,8 @@ def get():
     
     logger.info('Getting notebooks from Redivis...')
     username = "TheTrace"  # Replace with your Redivis username
-    workflow_name = "p_va_gva:xjgf"  # Replace with your workflow name
-    notebook_name = "va_selector:26e3"  # Replace with your notebook name
+    workflow_name = "immigration_shootings:k6j5"  # Replace with your workflow name
+    notebook_name = "updater:5n3r"  # Replace with your notebook name
     
     notebook = redivis.notebook(f"{username}.{workflow_name}.{notebook_name}")
     
